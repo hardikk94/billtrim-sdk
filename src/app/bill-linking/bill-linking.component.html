@@ -7,7 +7,9 @@
 </div>
 <div class="bill-container">
     <div *ngFor="let bill of appService?.bills" class="accordion">
-        <div class="accordion-heading">
+        <div  [ngClass]="selected.type == bill.type  
+        ? 'accordion-heading enable-accordion' : 'accordion-heading disable-accordion'"
+         class="accordion-heading" (click)="togglAccordion(bill)">
             <h3>
                 <span class="icon"><img src="{{ bill?.icon }}" alt="{{ bill?.name }}"/> </span>
                 <span class="title">{{ bill?.name }}</span>

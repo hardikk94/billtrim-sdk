@@ -1148,56 +1148,56 @@ export class AppService {
     icon: "../assets/images/icons/icon-bill-cable.svg",
     type:"cable",
     open:true,
-    step:1,
+    complete:false
   },
   {
     name:"Add internet bill",
     icon: "../assets/images/icons/icon-bill-internet.svg",
     type:"internet",
     open:false,
-    step:1,
+    complete:false
   },
   {
     name:"Add cellphone bill",
     icon: "../assets/images/icons/icon-bill-cellphone.svg",
     type:"cellphone",
     open:false,
-    step:1,
+    complete:false
   },
   {
     name:"Add electricity bill",
     icon: "../assets/images/icons/icon-bill-electricity.svg",
     type:"electricity",
     open:false,
-    step:1,
+    complete:false
   },
   {
     name:"Add auto bill",
     icon: "../assets/images/icons/icon-bill-auto.svg",
     open:false,
     type:"auto",
-    step:1,
+    complete:false
   },
   {
     name:"Add home bill",
     icon: "../assets/images/icons/icon-bill-home.svg",
     type:"home",
     open:false,
-    step:1,
+    complete:false
   },
   {
     name:"Add homePhone bill",
     icon: "../assets/images/icons/icon-bill-home-phone.svg",
     type:"homePhone",
     open:false,
-    step:1,
+    complete:false
   },
   {
     name:"Add homeSecurity bill",
     icon: "../assets/images/icons/icon-bill-home-security.svg",
     type:"homeSecurity",
     open:false,
-    step:1,
+    complete:false
   }]
   
   constructor(private router: Router) { }
@@ -1212,6 +1212,12 @@ export class AppService {
         this.router.navigate(['/finish'])
       }
     }
+  }
 
+  toggleBill(currBill:any) {
+    let findIndex = this.bills.findIndex((bill:any) => bill.type === currBill.type)
+    if(findIndex != -1){
+      this.bills[findIndex].open = !this.bills[findIndex].open
+    }
   }
 }

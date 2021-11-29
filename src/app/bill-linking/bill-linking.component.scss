@@ -70,3 +70,9 @@ progress::-webkit-progress-value {
 .accordion-heading img{
     display: block;
 }
+.enable-accordion{
+    cursor: pointer;
+}
+.disable-accordion{
+    cursor: not-allowed;
+}

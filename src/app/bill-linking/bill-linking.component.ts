@@ -16,6 +16,12 @@ export class BillLinkingComponent implements OnInit {
     this.billName = this.selected.type;
    }
 
+   togglAccordion(bill:any) {
+     if(this.selected.type == bill.type) {
+      this.appService.toggleBill(this.selected);    
+     }    
+   }
+
   handleSteps(steps:any) {
     switch(steps) {
       case 'select-provider' : {
@@ -41,7 +47,7 @@ export class BillLinkingComponent implements OnInit {
       }  
       case 'next-bill':{        
         if(this.selected ) {      
-          this.appService.updateBill(this.selected );          
+          this.appService.updateBill(this.selected);          
           this.selected = this.appService?.bills.find((bill:any )=> bill?.open)
           this.currentStep = 'select-provider'; 
           if(this.selected) {
