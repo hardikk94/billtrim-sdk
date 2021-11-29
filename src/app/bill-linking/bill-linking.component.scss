@@ -76,3 +76,9 @@ progress::-webkit-progress-value {
 .disable-accordion{
     cursor: not-allowed;
 }
+
+@media only screen and (min-width: 576px) {
+    .bill-container {
+        padding: 0 70px;
+    }
+  }
