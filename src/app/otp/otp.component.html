@@ -1,0 +1,42 @@
+<div id="prePage-enterPhoneOTP" class="page prePage">
+    <div class="title" id="prePage-enterPhoneOTP-title">Please enter the code sent to <br /><span
+            id="sentToPhoneLabel">your number</span></div>
+    <div class="cta-info-title">Code from BillTrim is on it’s way. Can take up to 30 seconds to arrive.</div>
+    <div class="page-form p-t-18">
+        <div class="input-group component">
+            <div class="form-label-group">
+                <input type="text" pattern="\d*" maxlength="4" id="inputPhoneOTP" class="form-control"
+                    placeholder="Verification code" required autocomplete="one-time-code" (keyup)="otpChange($event)"
+                    inputmode="numeric" />
+                <label for="inputPhoneOTP">Verification code</label>
+            </div>
+        </div>
+        <div class="text-center py-2 hide" id="OTPLoader">
+            <div class="spinner-border spinner-border-otp" role="status"></div>
+        </div>
+        <div id="phoneOTPError" class="alert-class p-b-10 form-error hide"><i class="fa fa-exclamation-circle"></i>
+            4-digit code is invalid.</div>
+    </div>
+
+    <div class="page_link">
+        <a (click)="resendOTP()">Re-send code</a>
+    </div>
+    <div class="cta hide">
+        <button type="button" id="otpResendBtn" class="btn btn-disabled relative" [disabled]="true"
+            (click)="resendOTP()">
+            RESEND CODE
+        </button>
+    </div>
+    <div id="prePage-enterPhoneOTP-alexMsg">
+        <div class="d-flex">
+            <div class="d-flex-c alexInfoCont mt-4 mt-md-5 chatBubble">
+                <div class="px-0 pl-md-2">
+                    <img src="/assets/images/fb/alex-2.jpeg" class="billLinkingAlex" />
+                </div>
+                <div class="pl-2">
+                    <span class="my-auto"> Trusted by <strong> 300,000+ </strong> BillTrimmers! </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

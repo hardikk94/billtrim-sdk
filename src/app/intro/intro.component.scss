@@ -1,0 +1,134 @@
+.container{
+    background-color: #FAFAFA;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.text-center{
+    text-align: center;
+}
+.close{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+.container-header{
+    background-color: #FFFFFF;
+    padding: 24px 16px;
+    text-align: center;
+}
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+}
+.benifits-title{
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+.dropdown {
+    margin-left: 12px;
+}
+.dropdown img{
+    display: block;
+}
+.benifits-content{
+    text-align: left;
+    padding: 4px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.benifits-content .bnf:not(:last-child){
+    margin: 16px 0;
+}
+.container-content{
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+    margin-top: 4px;
+}
+.container-content h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 4px 0 0 0;
+}
+.container-content p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 6px 0 28px 0;
+}
+.pay-with-number dl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pay-with-number dl:last-child{
+    margin-bottom: 32px;
+}
+.pay-with-number dt{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.pay-with-number dd{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0FAC65;
+}
+.providers{
+    display: flex;
+    align-items: center;
+}
+.providers img{
+    margin-right: 16px;
+}
+.provider-count{
+    background-color: #EEEFF2;
+    border-radius: 24px;
+    padding: 12px 8px;
+    color: #808080;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+.btn-container{
+    margin: 24px 0;
+}
+.btn-primary{
+    display: block;
+    width: 100%;
+    background-color: #40E593;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 5px;
+    text-align: center;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+    color: #FFFFFF;
+}
+.container-content p.last-content{
+    margin-bottom: 0;    
+}
+
+.upArrow{
+    transform: rotate(180deg);
+}
+
+.downArrow{
+    transform: rotate(0deg);
+}

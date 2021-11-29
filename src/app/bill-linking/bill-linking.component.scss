@@ -1,0 +1,72 @@
+.container, .bill-container{
+    background-color: #FAFAFA;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.text-center{
+    text-align: center;
+}
+.close{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+.container-header{
+    background-color: #FFFFFF;
+    padding: 24px 16px;
+    text-align: center;
+}
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+progress {
+    background-color: #EEEFF2;
+    width: calc(100% - 100px);
+    border-radius: 12px; 
+    height: 6px;
+    margin: 0;
+}
+progress::-webkit-progress-bar {
+    background-color: #EEEFF2;
+    border-radius: 12px; 
+}
+progress::-webkit-progress-value {
+  background-color: #40E593;
+  border-radius: 12px; 
+}
+
+.accordion{
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DFDFDF;
+    position: relative;
+    padding: 20px 16px;
+}
+.accordion-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-heading h3{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.accordion-heading .title{
+    color: #4A4A4A;
+    font-weight: 700;
+    font-size: 14px;
+}
+.accordion-heading .icon{
+    margin-right: 12px;
+}
+.accordion-heading img{
+    display: block;
+}

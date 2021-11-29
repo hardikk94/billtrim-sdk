@@ -1,0 +1,17 @@
+<div class="verification-confirm">
+    <h2>Where can you receive a verification code?</h2>
+
+    <label class="custom-radio"> <span class="name">Send a code to your cell phone</span> 
+        <input type="radio" name="action" (click)="radioClick('verification-confirm-code')" value="Send a code to your cell phone" />
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="custom-radio"> <span class="name">Answer security question</span> 
+        <input type="radio" name="action" (click)="radioClick('verification-confirm-question')" value="Answer security question" />
+        <span class="checkmark"></span>
+    </label>
+    
+    <div class="btn-container">
+        <button class="btn-primary" (click)="handle()">Next</button>
+    </div>
+</div> 

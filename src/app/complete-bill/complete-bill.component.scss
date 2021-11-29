@@ -1,0 +1,13 @@
+.thumnail-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.thumnail {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+}
+img {
+    max-width: 100%;
+}

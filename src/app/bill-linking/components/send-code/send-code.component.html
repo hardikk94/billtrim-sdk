@@ -1,0 +1,15 @@
+<div class="send-code">
+    <h2>Enter the code sent to you at 713-240-7034</h2>
+
+    <div class="floating">
+        <input id="pinNo" class="floating__input" type="number" maxlength="4" name="pin" placeholder="PIN Last 4 of SSN" />
+        <label for="pinNo" class="floating__label" data-content="PIN Last 4 of SSN">
+            <span class="hidden--visually">PIN / Last 4 of SSN</span>
+        </label>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-primary" (click)="handle('verification-confirm')">Submit</button>
+        <button class="btn-link">Resend Code</button>  
+    </div>
+</div>  

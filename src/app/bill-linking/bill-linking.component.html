@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="container-header">
+        <a class="close" href="#!"><img src="../../assets/images/icons/icon-close.svg" alt="Close"/></a>
+        <h1 class="title">Add your bills</h1>
+        <progress id="file" value="32" max="100"> 32% </progress>
+    </div>
+</div>
+<div class="bill-container">
+    <div *ngFor="let bill of appService?.bills" class="accordion">
+        <div class="accordion-heading">
+            <h3>
+                <span class="icon"><img src="{{ bill?.icon }}" alt="{{ bill?.name }}"/> </span>
+                <span class="title">{{ bill?.name }}</span>
+            </h3>
+            <div class="dropdown">
+                <img src="../../assets/images/icons/icon-dropdown.svg" alt="Dropdown"/>
+            </div>
+        </div>
+        <div class="accordion-content" *ngIf="bill?.open">
+            <app-select-provider [providerList]="providerList" *ngIf="currentStep === 'select-provider'"
+            (goToNextStep)="handleSteps($event)" [billName]="billName"
+            ></app-select-provider>
+            <app-remember-password *ngIf="currentStep === 'remember-password'"
+            (goToNextStep)="handleSteps($event)"
+            ></app-remember-password>
+            <app-credential  *ngIf="currentStep === 'credential'"
+            (goToNextStep)="handleSteps($event)"></app-credential>
+            <app-verification-confirm  *ngIf="currentStep === 'verification-confirm'"
+            (goToNextStep)="handleSteps($event)"></app-verification-confirm>
+            <app-send-code *ngIf="currentStep === 'verification-confirm-code'" 
+            (goToNextStep)="handleSteps($event)"></app-send-code>
+            <app-security-question *ngIf="currentStep === 'verification-confirm-question'" 
+            (goToNextStep)="handleSteps($event)"></app-security-question>
+            <app-bill-linked-done *ngIf="currentStep === 'bill-linked'" 
+            (goToNextStep)="handleSteps($event)"></app-bill-linked-done>
+        </div>
+    </div>
+</div>

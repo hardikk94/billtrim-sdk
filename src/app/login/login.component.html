@@ -1,0 +1,69 @@
+<div class="page prePage">
+    <div>
+      <div class="title" id="prePage-enterPhoneNumber-title">
+        Hey! I’m Alex.<br />
+        What’s your cell phone number?
+      </div>
+      <div class="cta-info-title">Guaranteed savings up to 25% on your cell phone, cable and internet bills.</div>
+    </div>
+
+    <div class="page-form pb-0">
+      <div class="input-group component">
+        <div class="form-label-group">
+          <input
+            type="tel"
+            id="inputNewPhoneNumber"
+            class="form-control"
+            placeholder="CELL PHONE"
+            mask="000-000-0000"
+            required         
+            pattern="\d*"
+            maxlength="10"          
+          />
+          <label for="inputNewPhoneNumber">CELL PHONE</label>
+        </div>
+      </div>
+      <div id="phoneNumberError" class="alert-class p-b-10 form-error hide"><i class="fa fa-exclamation-circle"></i> Please enter a valid phone</div>      
+    </div>
+    <div class="cta">
+      <button type="button" class="btn btn-primary relative continueBtn" (click)="getStarted()">
+        <div id="enterPhoneBtnLoading" class="spinner-border billLinkingSpinner hide" role="status"></div>
+        CONTINUE
+      </button>
+      <div class="cta-info">
+        <div class="d-flex j-c">
+          <img src="/assets/images/fb/trustbadge_small.svg" class="pr-1" />
+          <div class="f-12">We never call or share your personal information</div>
+        </div>
+      </div>
+
+      <div class="d-flex j-c mt-4">
+        <img src="/assets/images/fb/rating_ribbon.svg" />
+      </div>
+      <div class="d-flex j-c mt-3">
+        <div class="mr-3"><img src="/assets/images/fb/bbb_logo.svg" /></div>
+        <div><img src="/assets/images/fb/trustpilot_bl.svg" /></div>
+      </div>
+
+      <hr class="my-4" />   
+
+      <div class="phone-disclaimer" id="prePage-enterPhoneNumber-disclaimer">
+        <div class="font-small">We Care About Your Privacy</div>
+
+        By clicking "Continue" you agree to receive a 4-digit code to verify this phone number, updates about BillTrim products, the BillTrim
+        <a target="_blank" class="green" href="https://billtrim.com/terms-of-service.html">Terms of Use</a> and
+        <a target="_blank" class="green" href="https://billtrim.com/privacy-pledge.html">Privacy Policy</a>. Message frequency may vary. Message and data
+        rates may apply.
+        <br />
+        Reply HELP for help or STOP to cancel
+      </div>
+      <div class="mt-4 full-width bg-grey">
+        <div class="py-2">Also seen on</div>
+        <div class="d-flex-c j-c">
+          <img class="mx-3" src="/assets/images/fb/ABC_clr.svg" />
+          <img class="mx-3" src="/assets/images/fb/NBCy_clr.svg" />
+          <img class="mx-3" src="/assets/images/fb/google_clr.svg" />
+        </div>
+      </div>
+    </div>
+  </div>

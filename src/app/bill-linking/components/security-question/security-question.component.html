@@ -1,0 +1,21 @@
+<div class="secuirity-question">
+    <h2>Answer security questions</h2>
+
+    <div class="floating">
+        <input id="petname" class="floating__input" name="petname" placeholder="What is your pet name?" />
+        <label for="petname" class="floating__label" data-content="What is your pet name?">
+            <span class="hidden--visually">What is your pet name?</span>
+        </label>
+    </div>
+
+    <div class="floating">
+        <input id="spousename" class="floating__input" name="spousename" placeholder="What is your spouse name?" />
+        <label for="spousename" class="floating__label" data-content="What is your spouse name?">
+            <span class="hidden--visually">What is your spouse name?</span>
+        </label>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-primary" (click)="handle('verification-confirm')">Next</button>
+    </div>
+</div>

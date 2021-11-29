@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="container-header">
+        <a class="close" href="#!"><img src="../../assets/images/icons/icon-close.svg" alt="Close"/></a>
+        <h1 class="title">Pay Bills</h1>
+        <div class="benifits">
+            <div class="benifits-title" (click)="toggleBenifits()">
+                <span>See benefits you can unlock</span>
+                <div class="dropdown">
+                    <img src="../../assets/images/icons/icon-dropdown.svg" [ngClass]="isBenifitsVisible ? 'upArrow' : 'downArrow'" alt="Dropdown"/>
+                </div>
+            </div>
+            <div class="benifits-content" *ngIf="isBenifitsVisible">
+                <div class="bnf">
+                    <span>✨ Choose from 1000’s of billers</span>
+                </div>
+                <div class="bnf">
+                    <span>📈 Free Bill Monitoring</span>
+                </div>
+                <div class="bnf">
+                    <span>💰 Free Bill Negotiation</span>
+                </div>
+                <div class="bnf">
+                    <span>✅ One place to manage all your bills</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-content">
+        <h2>Pay with card</h2>
+        <p>Almost all billers accept debit cards. Enter your card number on the biller’s website and you’re good to go!</p>
+
+        <h2>Pay with account numbers</h2>
+        <div class="pay-with-number">
+            <dl>
+                <dt>Routing number</dt>
+                <dd>102100193</dd>
+            </dl>
+            <dl>
+                <dt>Routing number</dt>
+                <dd>248157945002</dd>
+            </dl>
+        </div>
+
+        <h2>Have Chime do it for you</h2>
+        <p>Start by finding your bills.</p>
+        <div class="providers">
+            <img src="../../assets/images/provider1.svg" alt="provider image">
+            <img src="../../assets/images/provider2.svg" alt="provider image">
+            <img src="../../assets/images/provider3.svg" alt="provider image">
+            <img src="../../assets/images/provider4.svg" alt="provider image">
+            <span class="provider-count">+30,000</span>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn-primary" value="Get Started" (click)="getStarted()">Get started</button>
+        </div>
+        <p class="text-center last-content">Chime partners with Uni to pay your bills</p>
+    </div>
+</div>
